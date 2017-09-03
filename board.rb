@@ -44,8 +44,6 @@ class Board
 
     @grid.each_with_index do |row, k|
       row.each_index do |j|
-        if k == 4 && j == 3
-        end
         neighbor_count = count_live_neighbors([k, j])
 
         if @grid[k][j].first == '██'
